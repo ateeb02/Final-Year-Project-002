@@ -13,7 +13,6 @@ battery_models = {
 }
 solutions = {}
 
-
 for key in battery_models:
     print('Simulating', key, end='')
     model = battery_models.get(key)
@@ -23,6 +22,13 @@ for key in battery_models:
     print('\t....Done')
     print(len(solutions))
     print(solutions[key])
+
+#Use this line to plot generic parameters
+pb.dynamic_plot(list(solutions.values()))
+
+#For more specific parameters, use the below given code,
+#And to search the required parameters run this line:
+#print(model_dfn.variable_names())
 
 for key in solutions:
     sol = solutions[key]
