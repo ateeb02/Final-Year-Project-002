@@ -11,6 +11,7 @@ battery_models = {
     'spme'  : pb.lithium_ion.SPMe(),
     'mpm'   : pb.lithium_ion.MPM()
 }
+
 solutions = {}
 
 for key in battery_models:
